@@ -1,6 +1,7 @@
 class apache {
 	package {'apache2':
-		ensure => present,
+		ensure => 'present',
+		allowcdrom => 'true',
 	}
 
 	file {'/var/www/html/index.html':
